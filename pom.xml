@@ -25,6 +25,19 @@
 		</dependency>
 	</dependencies>
 	<build>
+		 <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.4.0</version> <!-- Use a recent version -->
+        </plugin>
+        <!-- It is also recommended to define the maven-compiler-plugin version -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.12.1</version> <!-- Use a recent version compatible with your JDK -->
+        </plugin>
+    </plugins>
 		<finalName>LoginWebApp</finalName>
 	</build>
 </project>
